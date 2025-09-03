@@ -26,7 +26,7 @@ client.on("ready", () => {
                 client.guilds.fetch(guild_id).then(async c => {
                     const canvas = Canvas.createCanvas(1280, 700)
                     const ctx = canvas.getContext('2d')
-                    ctx.drawImage(await Canvas.loadImage('https://cdn.discordapp.com/attachments/950003993239777340/951820776720457778/Untitled2_20220218205227.png'), 0, 0, canvas.width, canvas.height)
+                    ctx.drawImage(await Canvas.loadImage('CHANGE THIS TO YOUR IMAGE URL'), 0, 0, canvas.width, canvas.height)
                     ctx.drawImage(await Canvas.loadImage(`./assets/black.png`), 0, 0, canvas.width, canvas.height)
                     Canvas.registerFont(`./assets/futura-bold.ttf`, { family: "Futura Book" })
 
